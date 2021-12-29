@@ -20,7 +20,7 @@ export const MainDropdown: React.FC<Props> = ({name, items}): JSX.Element => {
  useEffect(() => {
      window.addEventListener('resize', updateWindowDimensions);
 
-     if (width < 920) {
+     if (width < 920 && width !== 0) {
        setIsActive(false)
      } else {
        setIsActive(true)
