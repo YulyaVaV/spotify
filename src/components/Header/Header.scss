@@ -133,6 +133,11 @@
     background-color: $mainBgColor;
     border-radius: 2px;
     border: none;
+
+    @include onTablet {
+      margin-top: 25px;
+      z-index: 4;
+    }
   }
   
   &__down {
