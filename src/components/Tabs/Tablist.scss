@@ -1,0 +1,23 @@
+@import '../utils/vars.scss';
+@import '../utils/mixins.scss';
+
+.react-tabs {
+  width: 100% !important;
+}
+
+.react-tabs__tab {
+  font-size: 14px !important;
+  background-color: transparent !important;
+  color: $mainLightGray !important;
+  text-transform: uppercase;
+  border: none !important;
+  height: 40px !important;
+  border-bottom: none !important;
+  padding: 0px !important;
+  transition: all 0.3s;
+}
+
+.react-tabs__tab--selected {
+  color: $whiteColor !important;
+  border-bottom: 5px solid $greenColor !important;
+}

@@ -1,0 +1,42 @@
+@import '../../../utils/vars.scss';
+@import '../../../utils/mixins.scss';
+
+.releatedArtist {
+  display: flex;
+  align-items: center;
+  background: $mainBgColor;
+  padding: 5px;
+  border-bottom: 2px solid $blackColor;
+
+  @include onTablet {
+    width: 160px;
+  }
+
+    @include onMiniPhone {
+      background: transparent;
+      flex-direction: row;
+      border: none;
+      width: 42px;
+    }
+
+  &:hover {
+    background-color: $hoverColor;
+  }
+   
+  &__img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    color: $whiteColor;
+    margin-left: 15px;
+    margin-bottom: 0;
+    text-decoration: none;
+
+    @include onMiniPhone {
+      display: none;
+    }
+  }
+}

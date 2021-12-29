@@ -1,0 +1,266 @@
+@import '../../../utils/vars.scss';
+@import '../../../utils/mixins.scss';
+
+.mainContainer {
+  width: 100%;
+  padding: 15px;
+  background-color: $blackColor;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include onTablet {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+
+  &__overview {
+    width: 70%;
+
+    @include onTablet {
+      width: 100%;
+    }
+  }
+
+  &__latest {
+    padding-right: 15px;
+
+    &--title {
+      text-transform: uppercase;
+      color: $mainLightGray;
+      letter-spacing: 1.25px;
+      font-size: 13.2px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__track { 
+    margin-bottom: 30px;
+    display: flex;
+
+    &--img {
+      width: 75px;
+      height: 75px;
+    }
+
+    &--song {
+      width: 100%;
+      background: $mainBgColor;
+      color: $mainLightGray;
+      padding: 10px 15px;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+    }
+
+    &--name {
+      margin: 0;
+    }
+
+    &--data {
+      margin: 0;
+    }
+  }
+
+  &__albums {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 150px;
+
+    @include onTablet {
+      margin-bottom: 350px;
+    }
+
+    @include onPhone {
+      margin-bottom: 160px;
+    }
+
+    @include onMiniPhone {
+      margin-bottom: 0;
+    }
+
+
+
+    &--info {
+      display: flex;
+      margin-bottom: 30px;
+    }
+
+    &--image{
+      width: 135px;
+      height: 135px;
+    }
+
+    &--meta {
+      width: calc( 100% - 150px);
+      margin-left: 15px;
+      flex-flow: column wrap;
+    }
+
+    &--year {
+     color: $mainLightGray;
+     letter-spacing: 1px;
+     margin-bottom: 0;
+    }
+
+    &--title {
+      color: $whiteColor;
+      font-size: 30px;
+      font-weight: 100;
+      padding-bottom: 40px;
+
+      @include onPhone {
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &--buttons {
+      display: flex;
+    }
+
+    &--btn {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-right: 10px;
+    }
+  }
+
+    &__head {
+      color: $mainLightGray;
+      border-bottom: 1px solid $mainBgColor;
+      margin-bottom: 10px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      
+    &--title {
+      text-transform: uppercase;
+      color: $mainLightGray;
+      letter-spacing: 1.25px;
+      font-size: 13.2px;
+      margin-bottom: 10px;
+    }
+
+    &--icons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    &--icon {
+      color: $whiteColor;
+    }
+
+    &--other {
+      background: $mainBgColor;
+      padding: 8px;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: $hoverColor;
+      }
+    }
+
+    &--another {
+      background: transparent;
+      padding: 8px;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: $hoverColor;
+      }
+    }
+  }
+
+  &__popular {
+
+    &--title {
+      text-transform: uppercase;
+      color: $mainLightGray;
+      letter-spacing: 1.25px;
+      font-size: 13.2px;
+      margin-bottom: 15px;
+    }
+
+    &--button {
+      margin: 20px 0;
+      max-width: 130px;
+    }
+  }
+
+  &__songs {
+    margin-bottom: 20px;
+
+    &--song {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 130px;
+      width: 100%;
+      margin-left: 10px;
+    }
+
+    &--wrapper {
+      color: $mainLightGray;
+      height: 42px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &--grate {
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+
+    &--title {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0;
+    }
+
+    &--icons {
+      display: flex;
+      gap: 54px;
+    } 
+
+    &--icon {
+      @include onDekstop {
+        display: none;
+      }
+    }
+
+    &--content {
+      color: $mainLightGray;
+    }
+  }
+
+  &__releated {
+    width: 30%;
+
+    @include onTablet {
+      width: 100%;
+    }
+  }
+
+  &__artists {
+
+    @include onTablet {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    @include onMiniPhone {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+}

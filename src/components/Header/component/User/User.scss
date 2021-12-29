@@ -1,0 +1,19 @@
+@import '../../../utils/vars.scss';
+
+.user {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+  padding: 10px 30px;
+  clear: both;
+  font-weight: 400;
+  color: $mainLightGray;
+  white-space: nowrap;
+  font-size: 14px;
+
+  &:hover {
+    color: $whiteColor;
+    background-color: $headerDropBgColor;
+    text-decoration: none;
+  }
+}
