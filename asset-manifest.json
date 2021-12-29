@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/spotify/static/css/main.426a7afe.css",
-    "main.js": "/spotify/static/js/main.a3257a56.js",
+    "main.css": "/spotify/static/css/main.323a7a40.css",
+    "main.js": "/spotify/static/js/main.d7a6306c.js",
     "static/media/jcole.jpg": "/spotify/static/media/jcole.75b2ce45890e7a7f58a3.jpg",
     "static/media/mikestud.jpg": "/spotify/static/media/mikestud.32072d1410fc9a4200fb.jpg",
     "static/media/childish.jpg": "/spotify/static/media/childish.d837bb5119e22958d4a3.jpg",
@@ -12,11 +12,11 @@
     "static/media/bigsean.jpg": "/spotify/static/media/bigsean.0e249da0d2fe66faabb9.jpg",
     "static/media/wiz.jpeg": "/spotify/static/media/wiz.30c8d30048440cfa5fc0.jpeg",
     "index.html": "/spotify/index.html",
-    "main.426a7afe.css.map": "/spotify/static/css/main.426a7afe.css.map",
-    "main.a3257a56.js.map": "/spotify/static/js/main.a3257a56.js.map"
+    "main.323a7a40.css.map": "/spotify/static/css/main.323a7a40.css.map",
+    "main.d7a6306c.js.map": "/spotify/static/js/main.d7a6306c.js.map"
   },
   "entrypoints": [
-    "static/css/main.426a7afe.css",
-    "static/js/main.a3257a56.js"
+    "static/css/main.323a7a40.css",
+    "static/js/main.d7a6306c.js"
   ]
 }
