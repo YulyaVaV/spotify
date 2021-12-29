@@ -1,7 +1,7 @@
 ## Musik Concert
 
 - [DEMO LINK HERE](https://yulyavav.github.io/spotify/)
-- [Model](https://codepen.io/alowenthal/full/rxboRv/)
+- [CodePen Model](https://codepen.io/alowenthal/full/rxboRv/)
 -----------------------------------
 
 ####  - Overview and Releated Artists switch due to react tab
