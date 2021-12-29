@@ -67,21 +67,11 @@
   &__albums {
     width: 100%;
     margin-top: 30px;
-    margin-bottom: 150px;
+    margin-bottom: 140px;
 
     @include onTablet {
-      margin-bottom: 350px;
+      margin-bottom: 0px;
     }
-
-    @include onPhone {
-      margin-bottom: 160px;
-    }
-
-    @include onMiniPhone {
-      margin-bottom: 0;
-    }
-
-
 
     &--info {
       display: flex;

@@ -20,6 +20,10 @@ body {
   margin: 0 auto;
   font-family: 'Roboto';
   overflow: hidden;
+
+  @include onTablet {
+    overflow: visible;
+  }
 }
 
 .content {
