@@ -1,4 +1,4 @@
-## Musik Concert
+## Spotify Artist Page
 
 - [DEMO LINK HERE](https://yulyavav.github.io/spotify/)
 - [CodePen Model](https://codepen.io/alowenthal/full/rxboRv/)
