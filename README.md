@@ -1,14 +1,14 @@
 ## Musik Concert
 
-- [DEMO LINK HERE](https://yulyavav.github.io/music-concert/)
+- [DEMO LINK HERE](https://yulyavav.github.io/spotify/)
 - [Model](https://codepen.io/alowenthal/full/rxboRv/)
 -----------------------------------
 
-#### Overview and Releated Artists switch due to react tab
+####  - Overview and Releated Artists switch due to react tab
 
-#### The header works with user navigation
+####  - The header works with user navigation
 
-#### Lists collapse in the left sidebar
+####  - Lists collapse in the left sidebar
 
 ------------------------------------------
 React, HTML, SCSS, Flex-box, BEM,  React Tab, Cross-browser semantic and adaptive layout
