@@ -46,7 +46,7 @@ export const Middle: React.FC = (): JSX.Element => {
         <Tabs>
           <TabList className="middle__tablist">
             <div className="middle__tablist--wrapp">
-               <Tab>Overwiew</Tab>
+               <Tab>Overview</Tab>
                <Tab>Related Artists</Tab>  
             </div>
             <div className="middle__navigation--friends">
