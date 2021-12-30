@@ -253,20 +253,21 @@
       flex-direction: column;
       gap: 15px;
     }
+
     &--card {
       padding: 15px;
       width: 100%;
       background-color: $blackColor;
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 130px;
+      margin-bottom: 120px;
 
       @include onDekstop {
         margin-bottom: 120px;
       }
 
       @include onTablet {
-        margin-bottom: 340px;
+        margin-bottom: 0px;
       }
 
       @include onPhone {
