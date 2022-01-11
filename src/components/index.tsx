@@ -3,8 +3,8 @@ export { Header } from './Header/Header.tsx';
 //@ts-ignore
 export { Right } from './ContentRight/Right.tsx';
 //@ts-ignore
-export { Left } from './ContentLeft/Left.tsx';
+export { Left } from './Sidebar/Left.tsx';
 //@ts-ignore
-export { Middle } from './ContentMiddle/Middle.tsx';
+export { ArtistInfo } from './ContentMiddle/ArtistInfo.tsx';
 //@ts-ignore
 export { Footer } from './Footer/Footer.tsx';

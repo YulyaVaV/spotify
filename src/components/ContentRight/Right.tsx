@@ -1,6 +1,6 @@
 import React from 'react';
 //@ts-ignore
-import Button from '../../ui/Button/Button.tsx';
+import MainButton from '../../ui/MainButton/MainButton.tsx';
 
 //@ts-ignore
 import {List} from './component/List.tsx';
@@ -23,7 +23,7 @@ export const Right: React.FC = (): JSX.Element => {
         }
       </div>
       <div className="right__button">
-        <Button 
+        <MainButton 
           value="Find Friends"
         />
       </div>

@@ -1,0 +1,26 @@
+@import '../../../utils/vars.scss';
+@import '../../../utils/mixins.scss';
+
+.artistPlaylist {
+  width: 100%;
+  padding: 15px;
+  background-color: $blackColor;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include onTablet {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+
+  &__overview {
+    width: 70%;
+
+    @include onTablet {
+      width: 100%;
+    }
+  }
+}

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 //@ts-ignore
-import { Lists } from '../Lists/Lists.tsx';
+import { MenuItem } from '../MenuItem/MenuItem.tsx';
 import './MainDropdown.scss';
 
 interface Props {
@@ -27,6 +27,7 @@ export const MainDropdown: React.FC<Props> = ({name, items}): JSX.Element => {
      }
 
   }, [width]);
+
  
   return (
     <div className="maindrop">
@@ -37,15 +38,17 @@ export const MainDropdown: React.FC<Props> = ({name, items}): JSX.Element => {
         <h5 className="maindrop__name">{name}</h5>
         <span className={`maindrop__icon material-icons ${isActive ? 'rotate' : ''}`}>expand_less</span>
       </div>
-      
-      <div className={`maindrop__wrapper ${isActive ? 'open' : ''}`}>
-        {
-          items.map(item => (
-            <Lists {...item}/>
-          ))
-        }
-      </div>
+
+
+      {isActive && 
+        (<div className="maindrop__wrapper">
+          {
+            items.map(item => (
+              <MenuItem {...item}/>
+            ))
+          }
+        </div>
+        )}
     </div>
   )
 }
-

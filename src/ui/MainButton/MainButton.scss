@@ -1,0 +1,26 @@
+@import '../../components/utils/vars.scss';
+
+.mainButton {
+  margin-right: 10px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 5px 15px 4px 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  outline: none;
+  background: none;
+  color: $grayColor;
+  border: 1px solid $grayColor;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  &:hover {
+    color: $whiteColor;
+    border: 1px solid $whiteColor;
+    text-decoration: none;
+  }
+}

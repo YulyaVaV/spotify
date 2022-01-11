@@ -1,18 +1,18 @@
 import React from 'react';
-import './Middle.scss';
+import './ArtistInfo.scss';
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 //@ts-ignore
-import Button from '../../ui/Button/Button.tsx';
+import MainButton from '../../ui/MainButton/MainButton.tsx';
 //@ts-ignore
-import MainContainer from './component/MainContainer/MainContainer.tsx';
+import MainContainer from './component/ArtistPlaylist/ArtistPlaylist.tsx';
 //@ts-ignore
 import TabsContent from '../Tabs/TabsContent.tsx';
 //@ts-ignore
 import {artists} from './artists.ts';
 
-export const Middle: React.FC = (): JSX.Element => {
+export const ArtistInfo: React.FC = (): JSX.Element => {
   return (
     <div className="middle">
       <div className="middle__wrapp">
@@ -30,7 +30,7 @@ export const Middle: React.FC = (): JSX.Element => {
                   <i className="middle__green material-icons">play_arrow</i>
                   Play
                 </a>
-                <Button 
+                <MainButton 
                   value='Follow'
                 />
                 <a href='/' className="middle__button--more material-icons">more_horiz</a>

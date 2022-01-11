@@ -36,7 +36,10 @@ body {
 }
 
 a {
+  color: $grayColor;
+
   &:hover {
-    color: transparent;
+    color: $whiteColor;
+    text-decoration: none;
   }
 }

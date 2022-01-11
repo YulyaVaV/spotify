@@ -1,7 +1,7 @@
 import './App.scss';
 
 //@ts-ignore
-import { Header, Right, Left, Middle, Footer } from './components/index.tsx';
+import { Header, Right, Left, ArtistInfo, Footer } from './components/index.tsx';
 
 const App: React.FC = (): JSX.Element => {
   return (
@@ -9,7 +9,7 @@ const App: React.FC = (): JSX.Element => {
       <Header />
       <div className="content">
         <Left />
-        <Middle />
+        <ArtistInfo />
         <Right />
       </div>
       <Footer />

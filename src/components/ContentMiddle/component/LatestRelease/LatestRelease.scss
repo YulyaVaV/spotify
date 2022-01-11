@@ -1,0 +1,43 @@
+@import '../../../utils/vars.scss';
+
+.latestRelease {
+  &__latest {
+    padding-right: 15px;
+
+    &--title {
+      text-transform: uppercase;
+      color: $mainLightGray;
+      letter-spacing: 1.25px;
+      font-size: 13.2px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__track { 
+    margin-bottom: 30px;
+    display: flex;
+
+    &--img {
+      width: 75px;
+      height: 75px;
+    }
+
+    &--song {
+      width: 100%;
+      background: $mainBgColor;
+      color: $mainLightGray;
+      padding: 10px 15px;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+    }
+
+    &--name {
+      margin: 0;
+    }
+
+    &--data {
+      margin: 0;
+    }
+  }
+}
