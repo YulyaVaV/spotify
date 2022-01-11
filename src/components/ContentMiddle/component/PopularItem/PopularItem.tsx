@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Popular.scss';
+import './PopularItem.scss';
 
 export interface Props {
   img: any;
@@ -11,7 +11,7 @@ export interface Props {
   number: string;
 }
 
-export const Popular:React.FC<Props> = ({img, id, name, icon, explicit, number }): JSX.Element => {
+export const PopularItem:React.FC<Props> = ({img, id, name, icon, explicit, number }): JSX.Element => {
   return (
     <div className="popular">
       <img src={img} alt="" className="popular__img"/>

@@ -14,7 +14,7 @@ export const Footer: React.FC = (): JSX.Element => {
         <div className="footer__tracker">
           <p>0:01</p>
           <div className="footer__range">
-            <input type="range" min="35" max="100" className="footer__range--trick" id="slider" />
+            <input type="range" min="35" max="100" className="footer__tracker footer__range--trick" id="slider" />
           </div>
           <p>3:07</p>
         </div>
@@ -30,12 +30,12 @@ export const Footer: React.FC = (): JSX.Element => {
 
         <a href="/" className="footer__device">
           <span className="footer__icon material-icons">phone_iphone</span>
-          <span className="footer__device--title">DEVICES AVAILABE</span>
+          <span className="footer__device footer__device--title">DEVICES AVAILABE</span>
         </a>
 
         <div className="footer__volume">
           <span className="footer__icon material-icons">volume_up</span>
-            <input type="range" max="100" min="-95" className="footer__volume--range "/>
+            <input type="range" max="100" min="-95" className="footer__volume footer__volume--range "/>
         </div>
 
       </div>

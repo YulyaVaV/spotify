@@ -13,8 +13,8 @@ export const Header: React.FC = (): JSX.Element => {
     <div className="header">
       <div className="header__wrapp">
         <div className="header__arrows">
-          <span className="header__arrows--left material-icons">arrow_back_ios</span>
-          <span className="header__arrows--right material-icons">arrow_forward_ios</span>
+          <span className="header__arrows header__arrows--left material-icons">arrow_back_ios</span>
+          <span className="header__arrows header__arrows--right material-icons">arrow_forward_ios</span>
         </div>
         <input type="text" placeholder="Search" className="header__search"/>
       </div>
@@ -22,7 +22,7 @@ export const Header: React.FC = (): JSX.Element => {
       <div className="header__user">
         <i className='material-icons header__notif'>notifications</i>
         <i className='material-icons header__archive'>archive</i>
-        <div className="header__user--info">
+        <div className="header__info">
           <img
             src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/adam_proPic.jpg"
             alt="Profile"

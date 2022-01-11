@@ -7,7 +7,7 @@ const App: React.FC = (): JSX.Element => {
   return (
     <div className="App">
       <Header />
-      <div className="content">
+      <div className="App__content">
         <Left />
         <ArtistInfo />
         <Right />

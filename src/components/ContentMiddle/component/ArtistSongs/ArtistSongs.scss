@@ -1,0 +1,52 @@
+@import '../../../utils/mixins.scss';
+@import '../../../utils/vars.scss';
+
+.artistSongs {
+    &__songs {
+      margin-bottom: 20px;
+
+    &--song {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 130px;
+      width: 100%;
+      margin-left: 10px;
+    }
+
+    &--wrapper {
+      color: $mainLightGray;
+      height: 42px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &--grate {
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+
+    &--title {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0;
+    }
+
+    &--icons {
+      display: flex;
+      gap: 54px;
+    } 
+
+    &--icon {
+      @include onDekstop {
+        display: none;
+      }
+    }
+
+    &--content {
+      color: $mainLightGray;
+    }
+  }
+}

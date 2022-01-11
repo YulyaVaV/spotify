@@ -2,6 +2,7 @@
 @import '../utils/mixins.scss';
 
 .middle {
+  
   width: 70%;
   max-height: 100vh;
   height: 100%;
@@ -115,24 +116,6 @@
       align-items: center;
       padding-top: 15px;
     }
-  }
-
-  &__info {
-    padding: 15px;
-    z-index: 1;
-    width: 100%;
-    margin-top: 78px;
-    display: flex;
-    
-    @include onDekstop {
-      width: 100%;
-    }
-
-    @include onPhone {
-      align-items: center;
-      flex-direction: column;
-      margin-top: 10px;
-    }
 
     &--meta {
       @include onPhone {
@@ -162,63 +145,74 @@
     }
   }
 
-  &__button {
+  &__play-btn {
+    margin-right: 10px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    background: $greenColor;
+    color: $whiteColor;
+    border: 1px solid $greenColor;
+    border-radius: 20px;
+    padding: 5px 15px 5px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 11px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
 
-    &--green {
-      margin-right: 10px;
-      height: 27px;
-      display: flex;
-      align-items: center;
-      font-weight: 500;
-      background: $greenColor;
+    &:hover {
       color: $whiteColor;
-      border: 1px solid $greenColor;
-      border-radius: 20px;
-      padding: 5px 15px 5px 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 11px;
-      outline: none;
-      cursor: pointer;
-      transition: all 0.4s;
+      text-decoration: none;
+      background-color: $hoverGreen;
+    }
+  }
 
-      &:hover {
-        color: $whiteColor;
-        text-decoration: none;
-        background-color: $hoverGreen;
-      }
+  &__more-btn {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-size: 15px;
+    outline: none;
+    background: none;
+    color: $grayColor;
+    border: 1px solid $grayColor;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    &:hover {
+      color: $whiteColor;
+      border-color: $whiteColor;
+      text-decoration: none;
+    }
+  }
+
+
+  &__info {
+    padding: 15px;
+    z-index: 1;
+    width: 100%;
+    margin-top: 78px;
+    display: flex;
+    
+    @include onDekstop {
+      width: 100%;
     }
 
-    &--more {
-      width: 27px;
-      height: 27px;
-      border-radius: 50%;
-      display: flex;
+    @include onPhone {
       align-items: center;
-      justify-content: center;
-      letter-spacing: 1px;
-      font-size: 15px;
-      outline: none;
-      background: none;
-      color: $grayColor;
-      border: 1px solid $grayColor;
-      cursor: pointer;
-      transition: all 0.4s;
-
-      &:hover {
-        color: $whiteColor;
-        border-color: $whiteColor;
-        text-decoration: none;
-      }
+      flex-direction: column;
+      margin-top: 10px;
     }
-  }  
-  
-  &__green {
-    font-size: 22px;
   }
 
   &__listeners {
-    width: 20%;
     z-index: 1;
     text-align: right;
     color: $mainLightGray;
@@ -227,6 +221,8 @@
     letter-spacing: 1px;
     display: flex;
     flex-direction: column;
+    max-width: 200px;
+    width: 100%;
 
     @include onPhone {
       width: 200px;
@@ -244,7 +240,6 @@
 
   &__tablist {
     display: flex;
-    width: 100%;
     padding: 20px 15px 0 15px;
     margin-bottom: 5px;
     justify-content: space-between;
@@ -284,20 +279,20 @@
 
   }
 
-  &__navigation {
+  &__tablists {
     width: 100%;
     z-index: 1;
     background: $navBgColor;
     display: flex;
+  }
 
-    &--friends {
+    &__friends {
       max-width: 100px;
       width: 100%;
       display: flex;
       justify-content: space-between;
-    }
-
-    &--first{
+    
+    &--first {
       width: 30px;
       height: 30px;
       background-image: url(https://media.phillyvoice.com/media/images/HoodieAllen.2e16d0ba.fill-735x490.png);
@@ -324,7 +319,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      border: 1px solid $mainLightGray
+      border: 1px solid $mainLightGray;
     }
   }
 

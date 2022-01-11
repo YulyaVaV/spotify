@@ -10,8 +10,8 @@ export const List: React.FC<Props> = ({img, name}): JSX.Element => {
   return (
     <div className="list">
       <div className="list__wrapp">
-        <span className="list__wrapp--img">{img}</span>
-        <a href="/" className="list__wrapp--name">{name}</a>
+        <span className="list list__wrapp--img">{img}</span>
+        <a href="/" className="list list__wrapp--name">{name}</a>
       </div>
     </div>
   )

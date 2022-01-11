@@ -26,12 +26,14 @@ body {
   }
 }
 
-.content {
+.App {
+  &__content {
   display: flex;
   flex-flow: row wrap;
 
-  @include onTablet {
-    flex-direction: column;
+    @include onTablet {
+      flex-direction: column;
+    }
   }
 }
 

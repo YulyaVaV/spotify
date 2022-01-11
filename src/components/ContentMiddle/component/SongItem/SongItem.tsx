@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Songs.scss';
+import './SongItem.scss';
 
 interface Props {
   id: number,
@@ -12,7 +12,7 @@ interface Props {
   artist: string
 }
     
-export const Songs: React.FC<Props> = ({id, icon, name, explicit, time, artist, arrow}): JSX.Element => {
+export const SongItem: React.FC<Props> = ({id, icon, name, explicit, time, artist, arrow}): JSX.Element => {
   return (
     <div className="songs">
       <div className="songs__content">

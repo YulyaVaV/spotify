@@ -3,6 +3,7 @@
 .latestRelease {
   &__latest {
     padding-right: 15px;
+    margin-bottom: 30px;
 
     &--title {
       text-transform: uppercase;
@@ -14,7 +15,6 @@
   }
 
   &__track { 
-    margin-bottom: 30px;
     display: flex;
 
     &--img {

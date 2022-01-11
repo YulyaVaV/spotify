@@ -14,8 +14,8 @@ export const TabsContent: React.FC<Props> = ({img, name}): JSX.Element =>  {
   const isPhotoHover = ()  => {
     if (isHover) {
       return (
-        <div className="tabs__hover">
-          <span className="tabs__play material-icons">play_arrow</span>
+        <div>
+          <span className="tabs tabs__play material-icons">play_arrow</span>
         </div>
         )
       }
