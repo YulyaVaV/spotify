@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/spotify/static/css/main.cb91ee48.css",
-    "main.js": "/spotify/static/js/main.bf92b36f.js",
+    "main.css": "/spotify/static/css/main.1c6479d7.css",
+    "main.js": "/spotify/static/js/main.be1f96f4.js",
+    "static/media/hoodie.jpg": "/spotify/static/media/hoodie.df4221953a199a195c16.jpg",
     "static/media/jcole.jpg": "/spotify/static/media/jcole.75b2ce45890e7a7f58a3.jpg",
-    "static/media/mikestud.jpg": "/spotify/static/media/mikestud.32072d1410fc9a4200fb.jpg",
+    "static/media/mikestud.jpg": "/spotify/static/media/mikestud.6d4310e015a3e6dcb1ee.jpg",
     "static/media/childish.jpg": "/spotify/static/media/childish.d837bb5119e22958d4a3.jpg",
+    "static/media/drake.jpg": "/spotify/static/media/drake.e3824621afe9a5874a6c.jpg",
     "static/media/yonas.jpg": "/spotify/static/media/yonas.ebc999205766ab483f03.jpg",
-    "static/media/hoodie.jpg": "/spotify/static/media/hoodie.5dc49476eec1de3e070a.jpg",
-    "static/media/drake.jpeg": "/spotify/static/media/drake.b99d7b36e49f49fe8437.jpeg",
     "static/media/darkout.jpg": "/spotify/static/media/darkout.4b610764b697d0fe59a5.jpg",
     "static/media/bigsean.jpg": "/spotify/static/media/bigsean.0e249da0d2fe66faabb9.jpg",
     "static/media/wiz.jpeg": "/spotify/static/media/wiz.30c8d30048440cfa5fc0.jpeg",
     "index.html": "/spotify/index.html",
-    "main.cb91ee48.css.map": "/spotify/static/css/main.cb91ee48.css.map",
-    "main.bf92b36f.js.map": "/spotify/static/js/main.bf92b36f.js.map"
+    "main.1c6479d7.css.map": "/spotify/static/css/main.1c6479d7.css.map",
+    "main.be1f96f4.js.map": "/spotify/static/js/main.be1f96f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb91ee48.css",
-    "static/js/main.bf92b36f.js"
+    "static/css/main.1c6479d7.css",
+    "static/js/main.be1f96f4.js"
   ]
 }
