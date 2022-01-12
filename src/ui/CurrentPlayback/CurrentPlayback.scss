@@ -1,0 +1,55 @@
+@import '../../App/utils/vars.scss';
+@import '../../App/utils/mixins.scss';
+
+.current-playback {
+  background: $mainBgColor;
+  border-top: 1px solid $blackColor;
+  border-bottom: 1px solid $blackColor;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 117px;
+  width: 100%;
+
+  @include onTablet {
+    position: static;
+    border-top: 1px solid $blackColor;
+  }
+  
+  &__img {
+    width: 50px;
+    height: 50px;
+  }
+    
+  &__song {
+    color: $mainLightGray;
+    padding-left: 15px;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  &__name {
+    color: $mainLightGray;
+    font-size: 14px;
+
+    &:hover {
+      color: $whiteColor;
+    }
+  }
+
+  &__artist {
+    color: $mainLightGray;
+    font-size: 14px;
+
+
+    &:hover {
+      color: $whiteColor;
+    }
+  }
+
+  &__add {
+    margin-left: auto;
+    padding-right: 15px;
+    color: $mainLightGray;
+  } 
+}

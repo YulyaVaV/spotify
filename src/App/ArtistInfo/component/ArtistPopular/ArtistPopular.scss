@@ -1,0 +1,16 @@
+@import '../../../utils/vars.scss';
+
+.artist-popular {
+  &__title {
+    text-transform: uppercase;
+    color: $mainLightGray;
+    letter-spacing: 1.25px;
+    font-size: 13.2px;
+    margin-bottom: 15px;
+  }
+
+  &__button {
+    margin: 20px 0;
+    max-width: 130px;
+  }
+}

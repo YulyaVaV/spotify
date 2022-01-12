@@ -1,0 +1,50 @@
+@import '../../../utils/vars.scss';
+@import '../../../utils/mixins.scss';
+
+.maindrop {
+  color: $mainLightGray;
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 14px;
+
+  @include onPhone {
+    align-items: center;
+  }
+
+  @include onTablet {
+    max-width: 150px;
+    width: 100%;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    @include onTablet {
+      justify-content: center;
+      padding-left: 10px;
+    }
+  }
+
+  &__name {
+    font-size: 12px;
+    margin-bottom: 0;
+
+    @include onPhone {
+      font-size: 11px;
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+
+  &__wrapper {
+    display: block;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

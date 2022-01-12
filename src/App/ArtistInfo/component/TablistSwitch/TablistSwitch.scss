@@ -1,0 +1,49 @@
+@import '../../../utils/vars.scss';
+@import '../../../utils/mixins.scss';
+
+.tablist-switch {
+  width: 100%;
+  z-index: 1;
+  background: $navBgColor;
+  display: flex;
+
+  &__titles {
+    display: flex;
+    gap: 35px;
+  }
+  
+  &__wrapp {
+    display: flex;
+    padding: 20px 15px 0 15px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+  
+    @include onPhone {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  &__cards {
+    padding: 15px;
+    width: 100%;
+    background-color: $blackColor;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+
+    @include onDekstop {
+      margin-bottom: 120px;
+    }
+
+    @include onTablet {
+      margin-bottom: 0px;
+    }
+
+    @include onPhone {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+    }
+  }
+}

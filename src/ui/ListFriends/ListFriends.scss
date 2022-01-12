@@ -1,0 +1,25 @@
+@import '../../App/utils/vars.scss';
+
+.list-friends {
+  &__wrapp {
+    display: flex;
+    padding: 15px 0;
+    flex-flow: row nowrap;
+    align-items: center;
+    color: $mainLightGray;
+  }    
+  
+  &__img {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  &__name {
+    margin-bottom: 8px;
+    color: $mainLightGray;
+
+    &:hover {
+      color: $whiteColor;
+    }
+  }
+}

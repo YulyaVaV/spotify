@@ -1,0 +1,38 @@
+@import '../../App/utils/vars.scss';
+
+.artist-friend {
+  max-width: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &--first {
+    width: 30px;
+    height: 30px;
+    background-image: url(https://media.phillyvoice.com/media/images/HoodieAllen.2e16d0ba.fill-735x490.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid $mainLightGray
+  }
+
+  &--second {
+    width: 30px;
+    height: 30px;
+    background-image: url(https://lux.fm/uploads/importedNews/main/2013/10/8966404ac0aa1aa82ba9708e6918d42b4c7529e9.jpg?w=770&h=433&il&q=65&output=jpg&fit=cover&a=top);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid $mainLightGray
+  }
+
+  &--third {
+    width: 30px;
+    height: 30px;
+    background-image: url(https://c.files.bbci.co.uk/184A8/production/_118969499_davidguettadanreid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid $mainLightGray;
+  }
+}

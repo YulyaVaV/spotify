@@ -1,0 +1,62 @@
+@import '../utils/mixins.scss';
+@import '../utils/vars.scss';
+
+.card {
+  margin: 15px;
+  width: calc( (100% / 4) - 40px);
+  position: relative;
+  border: none;
+
+  @include onDekstop {
+    width: calc( (100% / 3) - 40px);
+  }
+
+  @include onPhone {
+    width: calc( (100% / 2) - 60px);
+  }
+
+  @include onMiniPhone {
+    width: calc( (100% / 1) - 110px);
+  }
+
+  &__img {
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    display: block;
+    background: $mainBgColor;
+    padding: 15px;
+    color: $whiteColor;
+    font-size: 14px;
+
+    &:hover {
+      color: $whiteColor;
+      text-decoration: $whiteColor;
+    }
+  }
+
+  &__hover {
+    transition: all 0.5s;
+  }
+
+  &__play {
+    color: $whiteColor;
+    font-size: 72px;
+    margin: 0 auto;
+    transition: all 0.8s;
+    text-shadow: 1px 5px 15px $blackColor;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    cursor: pointer;
+  }
+}

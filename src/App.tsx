@@ -1,16 +1,16 @@
 import './App.scss';
 
 //@ts-ignore
-import { Header, Right, Left, ArtistInfo, Footer } from './components/index.tsx';
+import { Header, ArtistFriends, Sidebar, ArtistInfo, Footer } from './App/index.tsx';
 
 const App: React.FC = (): JSX.Element => {
   return (
     <div className="App">
       <Header />
       <div className="App__content">
-        <Left />
+        <Sidebar />
         <ArtistInfo />
-        <Right />
+        <ArtistFriends />
       </div>
       <Footer />
     </div>
